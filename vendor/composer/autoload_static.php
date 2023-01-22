@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit607acebda398127a3c67fa7182ac4c1d
+class ComposerStaticInit44e5f7b2f522ce01341cb85b618857b3
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -36,6 +36,8 @@ class ComposerStaticInit607acebda398127a3c67fa7182ac4c1d
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
+        'd21d43db5f6e840ee7b10744ec7fdf66' => __DIR__ . '/../..' . '/app/Helpers/helpers.php',
+        '4d0ae7a8d9584e893484f8d42b80a471' => __DIR__ . '/../..' . '/app/Helpers/zoomApi.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -503,6 +505,9 @@ class ComposerStaticInit607acebda398127a3c67fa7182ac4c1d
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Api\\V1\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V1/AuthController.php',
+        'App\\Http\\Controllers\\Api\\V1\\EventController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V1/EventController.php',
+        'App\\Http\\Controllers\\Api\\V1\\ReserveController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V1/ReserveController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -513,12 +518,24 @@ class ComposerStaticInit607acebda398127a3c67fa7182ac4c1d
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\SigninRequest' => __DIR__ . '/../..' . '/app/Http/Requests/SigninRequest.php',
+        'App\\Http\\Requests\\StoreEventRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreEventRequest.php',
+        'App\\Http\\Requests\\UpdateEventRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateEventRequest.php',
+        'App\\Http\\Resources\\ErrorResource' => __DIR__ . '/../..' . '/app/Http/Resources/ErrorResource.php',
+        'App\\Http\\Resources\\EventResource' => __DIR__ . '/../..' . '/app/Http/Resources/EventResource.php',
+        'App\\Http\\Resources\\SuccessResource' => __DIR__ . '/../..' . '/app/Http/Resources/SuccessResource.php',
+        'App\\Models\\Event' => __DIR__ . '/../..' . '/app/Models/Event.php',
+        'App\\Models\\Reserve' => __DIR__ . '/../..' . '/app/Models/Reserve.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Policies\\EventPolicy' => __DIR__ . '/../..' . '/app/Policies/EventPolicy.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Repository\\BaseRepository' => __DIR__ . '/../..' . '/app/Repository/BaseRepository.php',
+        'App\\Repository\\EventRepository' => __DIR__ . '/../..' . '/app/Repository/EventRepository.php',
+        'App\\Repository\\UserRepository' => __DIR__ . '/../..' . '/app/Repository/UserRepository.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -630,8 +647,10 @@ class ComposerStaticInit607acebda398127a3c67fa7182ac4c1d
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+        'Database\\Factories\\EventFactory' => __DIR__ . '/../..' . '/database/factories/EventFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\EventSeeder' => __DIR__ . '/../..' . '/database/seeders/EventSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -5440,10 +5459,10 @@ class ComposerStaticInit607acebda398127a3c67fa7182ac4c1d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit607acebda398127a3c67fa7182ac4c1d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit607acebda398127a3c67fa7182ac4c1d::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit607acebda398127a3c67fa7182ac4c1d::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit607acebda398127a3c67fa7182ac4c1d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit44e5f7b2f522ce01341cb85b618857b3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit44e5f7b2f522ce01341cb85b618857b3::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit44e5f7b2f522ce01341cb85b618857b3::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit44e5f7b2f522ce01341cb85b618857b3::$classMap;
 
         }, null, ClassLoader::class);
     }
