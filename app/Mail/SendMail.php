@@ -28,6 +28,7 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->subject('Mail from calendly.com')
+                    ->view('emails.myMail');
     }
 }
