@@ -22,9 +22,10 @@ class CreateReservesTable extends Migration
             $table->unsignedBigInteger('event_id');
             $table->foreign('event_id')->references('id')->on('events')->onDelete('cascade');
             $table->string('email');
-            $table->string('username');
+            $table->string('name');
             $table->string('link')->nullable();
-            $table->unique(['date','start_time','event_id']);
+            $table->unique(['event_id','start_time']);
+            $table->unique(['event_id', 'email']);
             $table->softDeletes();
             $table->timestamps();
         });

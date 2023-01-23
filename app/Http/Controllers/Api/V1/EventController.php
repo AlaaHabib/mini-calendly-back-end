@@ -31,7 +31,7 @@ class EventController extends Controller
         $events = Event::where('user_id', auth()->user()->id)->get();
 
         foreach($events as $event){
-            $event['timeSteps'] = timeSteps($event['duration'], $event['start_time'], $event['end_time']);
+            $event['timeSteps'] = timeSteps($event['start_date'],$event['end_date'], $event['start_time'], $event['end_time'],$event['duration']);
         }
         return EventResource::collection($events);
     }
